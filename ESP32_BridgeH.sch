@@ -278,19 +278,18 @@ F 3 "" H 4050 4650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4500 4650 4500 4900
-NoConn ~ 4500 4450
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5EE4E06E
-P 7350 1600
-F 0 "#FLG0101" H 7350 1675 50  0001 C CNN
-F 1 "PWR_FLAG" H 7350 1773 50  0000 C CNN
-F 2 "" H 7350 1600 50  0001 C CNN
-F 3 "~" H 7350 1600 50  0001 C CNN
-	1    7350 1600
+P 9150 1550
+F 0 "#FLG0101" H 9150 1625 50  0001 C CNN
+F 1 "PWR_FLAG" H 9150 1723 50  0000 C CNN
+F 2 "" H 9150 1550 50  0001 C CNN
+F 3 "~" H 9150 1550 50  0001 C CNN
+	1    9150 1550
 	1    0    0    -1  
 $EndComp
-Text Label 7350 1600 3    50   ~ 0
+Text Label 9150 1550 3    50   ~ 0
 Vin
 Wire Notes Line
 	3850 2500 6650 2500
@@ -333,13 +332,13 @@ $EndComp
 $Comp
 L Diode:1N4007 D2
 U 1 1 5ED756C7
-P 9050 4000
-F 0 "D2" H 9050 4216 50  0000 C CNN
-F 1 "1N4007" H 9050 4125 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 9050 3825 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 9050 4000 50  0001 C CNN
-	1    9050 4000
-	1    0    0    -1  
+P 8950 4500
+F 0 "D2" H 8950 4716 50  0000 C CNN
+F 1 "1N4007" H 8950 4625 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8950 4325 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 8950 4500 50  0001 C CNN
+	1    8950 4500
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:CP C2
@@ -422,10 +421,6 @@ Wire Wire Line
 Connection ~ 7900 4000
 Wire Wire Line
 	7900 4000 7500 4000
-Wire Wire Line
-	9200 4000 9400 4000
-Wire Wire Line
-	9400 4000 9400 4350
 $Comp
 L power:GND #PWR011
 U 1 1 5EDB0073
@@ -443,10 +438,8 @@ Wire Wire Line
 	8350 5200 8350 4300
 Text Label 7900 4000 0    50   ~ 0
 Vcc
-Text Label 8850 4000 0    50   ~ 0
+Text Label 8950 4000 0    50   ~ 0
 Vin
-Wire Wire Line
-	8650 4000 8900 4000
 $Comp
 L power:GND #PWR05
 U 1 1 5EDD85AD
@@ -608,6 +601,86 @@ Text Label 3000 1550 0    50   ~ 0
 A01
 Text Label 3000 1650 0    50   ~ 0
 A02
+Text Label 7900 1750 0    50   ~ 0
+GND
+Wire Wire Line
+	8650 4000 8950 4000
+Wire Wire Line
+	8950 4000 8950 4350
+Wire Wire Line
+	9400 4350 9400 4000
+Wire Wire Line
+	9400 4000 8950 4000
+Connection ~ 8950 4000
+$Comp
+L power:GND #PWR0101
+U 1 1 5EDEDBAA
+P 8950 5200
+F 0 "#PWR0101" H 8950 4950 50  0001 C CNN
+F 1 "GND" H 8955 5027 50  0000 C CNN
+F 2 "" H 8950 5200 50  0001 C CNN
+F 3 "" H 8950 5200 50  0001 C CNN
+	1    8950 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 4650 8950 5200
+$Comp
+L freetronics_schematic:POT VR1
+U 1 1 5EDF1ECE
+P 7500 1550
+F 0 "VR1" H 7500 1427 50  0000 C CNN
+F 1 "POT" H 7500 1336 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_T-16H_Single_Horizontal" H 7500 1550 60  0001 C CNN
+F 3 "" H 7500 1550 60  0000 C CNN
+	1    7500 1550
+	1    0    0    -1  
+$EndComp
+Text Label 7050 1750 2    50   ~ 0
+Vcc
+Text Label 4500 4450 2    50   ~ 0
+ADC
+Text Label 7500 1400 2    50   ~ 0
+ADC
 Text Label 7200 3150 3    50   ~ 0
 GND
+Wire Notes Line
+	6750 2400 8200 2400
+Wire Notes Line
+	8200 2400 8200 1150
+Wire Notes Line
+	8200 1150 6750 1150
+Wire Notes Line
+	6750 1150 6750 2400
+Text Notes 6750 1150 0    59   ~ 12
+ADC-POT\n
+$Comp
+L Device:C C4
+U 1 1 5EE0FBE4
+P 7500 1950
+F 0 "C4" V 7752 1950 50  0000 C CNN
+F 1 "0.1uF" V 7661 1950 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 7538 1800 50  0001 C CNN
+F 3 "~" H 7500 1950 50  0001 C CNN
+	1    7500 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7250 1550 7250 1750
+Wire Wire Line
+	7250 1950 7350 1950
+Wire Wire Line
+	7750 1550 7750 1750
+Wire Wire Line
+	7750 1950 7650 1950
+Wire Wire Line
+	7250 1750 7050 1750
+Connection ~ 7250 1750
+Wire Wire Line
+	7250 1750 7250 1950
+Wire Wire Line
+	7750 1750 7900 1750
+Connection ~ 7750 1750
+Wire Wire Line
+	7750 1750 7750 1950
 $EndSCHEMATC
