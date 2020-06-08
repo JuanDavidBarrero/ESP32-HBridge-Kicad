@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 24)
+    (drawings 26)
     (tracks 250)
     (zones 0)
     (modules 17)
@@ -1391,6 +1391,12 @@
     )
   )
 
+  (gr_text "Vcc\n" (at 131.064 122.174) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text Vin (at 128.27 122.174) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
   (gr_text "B02\n" (at 144.526 102.87) (layer F.SilkS) (tstamp 5ED77B97)
     (effects (font (size 1 1) (thickness 0.15)))
   )
