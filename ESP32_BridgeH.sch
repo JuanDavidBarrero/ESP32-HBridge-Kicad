@@ -625,17 +625,6 @@ F 3 "" H 8950 5200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8950 4650 8950 5200
-$Comp
-L freetronics_schematic:POT VR1
-U 1 1 5EDF1ECE
-P 7500 1550
-F 0 "VR1" H 7500 1427 50  0000 C CNN
-F 1 "POT" H 7500 1336 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Piher_T-16H_Single_Horizontal" H 7500 1550 60  0001 C CNN
-F 3 "" H 7500 1550 60  0000 C CNN
-	1    7500 1550
-	1    0    0    -1  
-$EndComp
 Text Label 7050 1750 2    50   ~ 0
 Vcc
 Text Label 4500 4450 2    50   ~ 0
@@ -683,4 +672,19 @@ Wire Wire Line
 Connection ~ 7750 1750
 Wire Wire Line
 	7750 1750 7750 1950
+$Comp
+L Device:R_POT RV1
+U 1 1 5EE37AC4
+P 7500 1550
+F 0 "RV1" V 7400 1650 50  0000 R CNN
+F 1 "R_POT" V 7300 1650 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_T-16H_Single_Horizontal" H 7500 1550 50  0001 C CNN
+F 3 "~" H 7500 1550 50  0001 C CNN
+	1    7500 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7350 1550 7250 1550
+Wire Wire Line
+	7650 1550 7750 1550
 $EndSCHEMATC

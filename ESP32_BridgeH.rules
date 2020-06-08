@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 185)
+    (start_pass_no 203)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -96,6 +96,7 @@
     )
   )
   (class "kicad_default"
+    /ADC
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
@@ -117,12 +118,12 @@
     )
   )
   (class signal
-    "Net-(BT1-Pad1)" /reset /Vcc "Net-(D1-Pad1)" /A02 /A01 /B02 /B01
-    "Net-(J3-Pad1)" /RX /TX "Net-(J4-Pad5)" /PWA /Ain1 /Ain2 /Bin1
-    /Bin2 /PWB "Net-(U2-Pad37)" /SCL /SDA "Net-(U2-Pad32)" "Net-(U2-Pad31)" "Net-(U2-Pad30)"
-    "Net-(U2-Pad29)" "Net-(U2-Pad28)" "Net-(U2-Pad27)" /INT "Net-(U2-Pad24)" "Net-(U2-Pad23)" "Net-(U2-Pad22)" "Net-(U2-Pad21)"
-    "Net-(U2-Pad20)" "Net-(U2-Pad19)" "Net-(U2-Pad18)" "Net-(U2-Pad17)" "Net-(U2-Pad13)" "Net-(U2-Pad10)" "Net-(U2-Pad7)" "Net-(U2-Pad6)"
-    "Net-(U2-Pad5)" "Net-(U2-Pad4)" "Net-(U3-Pad5)" "Net-(U3-Pad6)" "Net-(U3-Pad7)"
+    /reset /Vcc "Net-(D1-Pad1)" /A02 /A01 /B02 /B01 "Net-(J3-Pad1)"
+    /RX /TX "Net-(J4-Pad5)" /PWA /Ain1 /Ain2 /Bin1 /Bin2
+    /PWB "Net-(U2-Pad37)" /SCL /SDA "Net-(U2-Pad32)" "Net-(U2-Pad31)" "Net-(U2-Pad30)" "Net-(U2-Pad29)"
+    "Net-(U2-Pad28)" "Net-(U2-Pad27)" /INT "Net-(U2-Pad24)" "Net-(U2-Pad23)" "Net-(U2-Pad22)" "Net-(U2-Pad21)" "Net-(U2-Pad20)"
+    "Net-(U2-Pad19)" "Net-(U2-Pad18)" "Net-(U2-Pad17)" "Net-(U2-Pad10)" "Net-(U2-Pad7)" "Net-(U2-Pad6)" "Net-(U2-Pad5)" "Net-(U2-Pad4)"
+    "Net-(U3-Pad5)" "Net-(U3-Pad6)" "Net-(U3-Pad7)"
     (clearance_class signal)
     (via_rule signal)
     (rule
