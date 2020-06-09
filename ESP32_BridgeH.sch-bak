@@ -27,63 +27,33 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J2
 U 1 1 5ED69630
-P 2800 2000
-F 0 "J2" H 2880 1992 50  0000 L CNN
-F 1 "MT2" H 2880 1901 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-4_P5.08mm" H 2800 2000 50  0001 C CNN
-F 3 "~" H 2800 2000 50  0001 C CNN
-	1    2800 2000
+P 2800 1950
+F 0 "J2" H 2880 1942 50  0000 L CNN
+F 1 "MT2" H 2880 1851 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-4_P5.08mm" H 2800 1950 50  0001 C CNN
+F 3 "~" H 2800 1950 50  0001 C CNN
+	1    2800 1950
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J1
 U 1 1 5ED6993B
-P 2800 1450
-F 0 "J1" H 2880 1442 50  0000 L CNN
-F 1 "MT1" H 2880 1351 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-4_P5.08mm" H 2800 1450 50  0001 C CNN
-F 3 "~" H 2800 1450 50  0001 C CNN
-	1    2800 1450
+P 2800 1400
+F 0 "J1" H 2880 1392 50  0000 L CNN
+F 1 "MT1" H 2880 1301 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-4_P5.08mm" H 2800 1400 50  0001 C CNN
+F 3 "~" H 2800 1400 50  0001 C CNN
+	1    2800 1400
 	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x05 J4
-U 1 1 5ED6A301
-P 8950 2950
-F 0 "J4" H 9030 2992 50  0000 L CNN
-F 1 "Serial" H 9030 2901 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 8950 2950 50  0001 C CNN
-F 3 "~" H 8950 2950 50  0001 C CNN
-	1    8950 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L JuanDaLIB:MPU6050 U3
-U 1 1 5ED6DBFD
-P 7450 2900
-F 0 "U3" H 7878 2888 50  0000 L CNN
-F 1 "MPU6050" H 7250 3100 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 7450 2900 50  0001 C CNN
-F 3 "" H 7450 2900 50  0001 C CNN
-	1    7450 2900
-	1    0    0    -1  
 $EndComp
 Text Label 6350 3300 0    50   ~ 0
 SCL
 Text Label 6350 3600 0    50   ~ 0
 SDA
-Text Label 7300 3150 3    50   ~ 0
-SCL
-Text Label 7400 3150 3    50   ~ 0
-SDA
 Text Label 6350 3400 0    50   ~ 0
 TX
 Text Label 6350 3500 0    50   ~ 0
 RX
-Text Label 8750 2850 2    50   ~ 0
-RX
-Text Label 8750 2950 2    50   ~ 0
-TX
 $Comp
 L power:GND #PWR03
 U 1 1 5EDA5DAC
@@ -117,95 +87,74 @@ F 3 "" H 4500 4900 50  0001 C CNN
 	1    4500 4900
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR010
-U 1 1 5EDA7056
-P 8750 3050
-F 0 "#PWR010" H 8750 2800 50  0001 C CNN
-F 1 "GND" V 8755 2922 50  0000 R CNN
-F 2 "" H 8750 3050 50  0001 C CNN
-F 3 "" H 8750 3050 50  0001 C CNN
-	1    8750 3050
-	0    1    1    0   
-$EndComp
-NoConn ~ 8750 3150
-NoConn ~ 7500 3150
-NoConn ~ 7600 3150
-NoConn ~ 7700 3150
-Text Label 7100 3150 3    50   ~ 0
-Vcc
-Text Label 8750 2750 2    50   ~ 0
-Vcc
 Text Label 4500 3350 2    50   ~ 0
 Vcc
-Text Label 7800 3150 3    50   ~ 0
-INT
 Text Label 6350 4300 0    50   ~ 0
 INT
 $Comp
 L JuanDaLIB:TB6612FNG U1
 U 1 1 5EDBDFBD
-P 5200 1650
-F 0 "U1" H 5200 2115 50  0000 C CNN
-F 1 "TB6612FNG" H 5200 2024 50  0000 C CNN
-F 2 "JuanDavid:TB6612FNG" H 5200 1600 50  0001 C CNN
-F 3 "https://www.pololu.com/file/0J86/TB6612FNG.pdf" H 5200 1600 50  0001 C CNN
-	1    5200 1650
+P 5200 1600
+F 0 "U1" H 5200 2065 50  0000 C CNN
+F 1 "TB6612FNG" H 5200 1974 50  0000 C CNN
+F 2 "JuanDavid:TB6612FNG" H 5200 1550 50  0001 C CNN
+F 3 "https://www.pololu.com/file/0J86/TB6612FNG.pdf" H 5200 1550 50  0001 C CNN
+	1    5200 1600
 	1    0    0    -1  
 $EndComp
-Text Label 4700 1550 2    50   ~ 0
+Text Label 4700 1500 2    50   ~ 0
 Vcc
-Text Label 5700 1750 0    50   ~ 0
+Text Label 5700 1700 0    50   ~ 0
 Vcc
-Text Label 4700 1750 2    50   ~ 0
+Text Label 4700 1700 2    50   ~ 0
 A01
-Text Label 4700 1850 2    50   ~ 0
+Text Label 4700 1800 2    50   ~ 0
 A02
-Text Label 3000 1350 0    50   ~ 0
+Text Label 3000 1300 0    50   ~ 0
 A01
-Text Label 3000 1450 0    50   ~ 0
+Text Label 3000 1400 0    50   ~ 0
 A02
-Text Label 3000 2000 0    50   ~ 0
+Text Label 3000 1950 0    50   ~ 0
 B02
-Text Label 3000 1900 0    50   ~ 0
+Text Label 3000 1850 0    50   ~ 0
 B01
-Text Label 4700 1950 2    50   ~ 0
+Text Label 4700 1900 2    50   ~ 0
 B02
-Text Label 4700 2050 2    50   ~ 0
+Text Label 4700 2000 2    50   ~ 0
 B01
 Wire Wire Line
 	5000 5000 5000 5200
 Text Label 5000 5100 1    50   ~ 0
 GND
-Text Label 5700 2150 0    50   ~ 0
+Text Label 5700 2100 0    50   ~ 0
 GND
-Text Label 4700 1650 2    50   ~ 0
+Text Label 4700 1600 2    50   ~ 0
 GND
-Text Label 4700 2150 2    50   ~ 0
+Text Label 4700 2100 2    50   ~ 0
 GND
-Text Label 4700 1450 2    50   ~ 0
+Text Label 4700 1400 2    50   ~ 0
 Vin
-Text Label 5700 1450 0    50   ~ 0
+Text Label 5700 1400 0    50   ~ 0
 PWA
 Text Label 4500 4350 2    50   ~ 0
 PWA
-Text Label 5700 1550 0    50   ~ 0
+Text Label 5700 1500 0    50   ~ 0
 Ain1
 Text Label 4500 4550 2    50   ~ 0
 Ain1
-Text Label 5700 1650 0    50   ~ 0
+Text Label 5700 1600 0    50   ~ 0
 Ain2
 Text Label 5100 5000 3    50   ~ 0
 Ain2
-Text Label 5700 1850 0    50   ~ 0
+Text Label 5700 1800 0    50   ~ 0
 Bin1
 Text Label 4500 3950 2    50   ~ 0
 Bin1
-Text Label 5700 1950 0    50   ~ 0
+Text Label 5700 1900 0    50   ~ 0
 Bin2
 Text Label 4500 4050 2    50   ~ 0
 Bin2
-Text Label 5700 2050 0    50   ~ 0
+Text Label 5700 2000 0    50   ~ 0
 PWB
 Text Label 4500 4250 2    50   ~ 0
 PWB
@@ -423,22 +372,6 @@ F 3 "" H 7200 4700 50  0001 C CNN
 $EndComp
 Wire Notes Line
 	7750 5450 7750 3700
-Wire Notes Line
-	6750 2500 8200 2500
-Wire Notes Line
-	8200 2500 8200 3450
-Wire Notes Line
-	8200 3450 6750 3450
-Wire Notes Line
-	6750 3450 6750 2500
-Wire Notes Line
-	8400 2500 9300 2500
-Wire Notes Line
-	9300 2500 9300 3450
-Wire Notes Line
-	9300 3450 8400 3450
-Wire Notes Line
-	8400 3450 8400 2500
 Wire Wire Line
 	3400 2750 3400 2950
 Connection ~ 2900 4350
@@ -477,44 +410,40 @@ Wire Notes Line
 Wire Notes Line
 	3750 5450 2350 5450
 Wire Notes Line
-	6650 2400 6650 1150
+	6650 2350 6650 1100
 Wire Notes Line
-	6650 1150 3850 1150
+	6650 1100 3850 1100
 Wire Notes Line
-	3850 1150 3850 2400
+	3850 1100 3850 2350
 Wire Notes Line
-	3850 2400 6650 2400
+	3850 2350 6650 2350
 Wire Notes Line
-	2350 1150 3750 1150
+	2350 1100 3750 1100
 Wire Notes Line
-	3750 1150 3750 2400
+	3750 1100 3750 2350
 Wire Notes Line
-	3750 2400 2350 2400
+	3750 2350 2350 2350
 Wire Notes Line
-	2350 2400 2350 1150
-Text Notes 2350 1150 0    59   ~ 12
+	2350 2350 2350 1100
+Text Notes 2350 1100 0    59   ~ 12
 Motor's  terminals
-Text Notes 3850 1150 0    59   ~ 12
+Text Notes 3850 1100 0    59   ~ 12
 Bridge H 
 Text Notes 2350 2500 0    59   ~ 12
 Reset button\n
 Text Notes 3850 2500 0    59   ~ 12
 ESP32\n
-Text Notes 6750 2500 0    59   ~ 12
-MPU6050
-Text Notes 8400 2500 0    59   ~ 12
-USB Serial\n
 Text Notes 7750 3700 0    59   ~ 12
 POWER\n
-Text Label 3000 2100 0    50   ~ 0
+Text Label 3000 2050 0    50   ~ 0
 B01
-Text Label 3000 2200 0    50   ~ 0
+Text Label 3000 2150 0    50   ~ 0
 B02
-Text Label 3000 1550 0    50   ~ 0
+Text Label 3000 1500 0    50   ~ 0
 A01
-Text Label 3000 1650 0    50   ~ 0
+Text Label 3000 1600 0    50   ~ 0
 A02
-Text Label 7900 1750 0    50   ~ 0
+Text Label 7900 1700 0    50   ~ 0
 GND
 $Comp
 L power:GND #PWR0101
@@ -527,84 +456,82 @@ F 3 "" H 9200 5200 50  0001 C CNN
 	1    9200 5200
 	1    0    0    -1  
 $EndComp
-Text Label 7050 1750 2    50   ~ 0
+Text Label 7050 1700 2    50   ~ 0
 Vcc
 Text Label 4500 4450 2    50   ~ 0
 ADC
-Text Label 7500 1400 2    50   ~ 0
+Text Label 7500 1350 2    50   ~ 0
 ADC
-Text Label 7200 3150 3    50   ~ 0
-GND
 Wire Notes Line
-	6750 2400 8200 2400
+	6750 2350 8200 2350
 Wire Notes Line
-	8200 2400 8200 1150
+	8200 2350 8200 1100
 Wire Notes Line
-	8200 1150 6750 1150
+	8200 1100 6750 1100
 Wire Notes Line
-	6750 1150 6750 2400
-Text Notes 6750 1150 0    59   ~ 12
+	6750 1100 6750 2350
+Text Notes 6750 1100 0    59   ~ 12
 ADC-POT\n
 $Comp
 L Device:C C4
 U 1 1 5EE0FBE4
-P 7500 1950
-F 0 "C4" V 7752 1950 50  0000 C CNN
-F 1 "0.1uF" V 7661 1950 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 7538 1800 50  0001 C CNN
-F 3 "~" H 7500 1950 50  0001 C CNN
-	1    7500 1950
+P 7500 1900
+F 0 "C4" V 7752 1900 50  0000 C CNN
+F 1 "0.1uF" V 7661 1900 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 7538 1750 50  0001 C CNN
+F 3 "~" H 7500 1900 50  0001 C CNN
+	1    7500 1900
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7250 1550 7250 1750
+	7250 1500 7250 1700
 Wire Wire Line
-	7250 1950 7350 1950
+	7250 1900 7350 1900
 Wire Wire Line
-	7750 1550 7750 1750
+	7750 1500 7750 1700
 Wire Wire Line
-	7750 1950 7650 1950
+	7750 1900 7650 1900
 Wire Wire Line
-	7250 1750 7050 1750
-Connection ~ 7250 1750
+	7250 1700 7050 1700
+Connection ~ 7250 1700
 Wire Wire Line
-	7250 1750 7250 1950
+	7250 1700 7250 1900
 Wire Wire Line
-	7750 1750 7900 1750
-Connection ~ 7750 1750
+	7750 1700 7900 1700
+Connection ~ 7750 1700
 Wire Wire Line
-	7750 1750 7750 1950
+	7750 1700 7750 1900
 $Comp
 L Device:R_POT RV1
 U 1 1 5EE37AC4
-P 7500 1550
-F 0 "RV1" V 7400 1650 50  0000 R CNN
-F 1 "R_POT" V 7300 1650 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Piher_T-16H_Single_Horizontal" H 7500 1550 50  0001 C CNN
-F 3 "~" H 7500 1550 50  0001 C CNN
-	1    7500 1550
+P 7500 1500
+F 0 "RV1" V 7400 1600 50  0000 R CNN
+F 1 "R_POT" V 7300 1600 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_T-16H_Single_Horizontal" H 7500 1500 50  0001 C CNN
+F 3 "~" H 7500 1500 50  0001 C CNN
+	1    7500 1500
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7350 1550 7250 1550
+	7350 1500 7250 1500
 Wire Wire Line
-	7650 1550 7750 1550
+	7650 1500 7750 1500
 $Comp
-L Device:R R?
+L Device:R R4
 U 1 1 5EE06799
 P 9650 4300
-F 0 "R?" H 9720 4346 50  0000 L CNN
-F 1 "330 ohm" H 9720 4255 50  0000 L CNN
+F 0 "R4" H 9720 4346 50  0000 L CNN
+F 1 "1 Kohm" H 9720 4255 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9580 4300 50  0001 C CNN
 F 3 "~" H 9650 4300 50  0001 C CNN
 	1    9650 4300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R5
 U 1 1 5EE06B2E
 P 9650 4850
-F 0 "R?" H 9720 4896 50  0000 L CNN
+F 0 "R5" H 9720 4896 50  0000 L CNN
 F 1 "330 ohm" H 9720 4805 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9580 4850 50  0001 C CNN
 F 3 "~" H 9650 4850 50  0001 C CNN
@@ -616,10 +543,10 @@ Wire Wire Line
 Wire Wire Line
 	9650 4150 9650 4000
 $Comp
-L Device:C C?
+L Device:C C6
 U 1 1 5EE0B3F0
 P 10200 4900
-F 0 "C?" V 10452 4900 50  0000 C CNN
+F 0 "C6" V 10452 4900 50  0000 C CNN
 F 1 "0.1uF" V 10361 4900 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 10238 4750 50  0001 C CNN
 F 3 "~" H 10200 4900 50  0001 C CNN
@@ -627,10 +554,10 @@ F 3 "~" H 10200 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R3
 U 1 1 5EE11F58
 P 7200 4000
-F 0 "R?" H 7270 4046 50  0000 L CNN
+F 0 "R3" H 7270 4046 50  0000 L CNN
 F 1 "1 Kohm" H 7270 3955 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7130 4000 50  0001 C CNN
 F 3 "~" H 7200 4000 50  0001 C CNN
@@ -647,7 +574,7 @@ U 1 1 5EDE5818
 P 2850 3500
 F 0 "SW1" H 2850 3825 50  0000 C CNN
 F 1 "reset" H 2850 3734 50  0000 C CNN
-F 2 "freetronics_footprints:SW_PUSHBUTTON_PTH" H 2850 3500 50  0001 C CNN
+F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 2850 3500 50  0001 C CNN
 F 3 "~" H 2850 3500 50  0001 C CNN
 	1    2850 3500
 	-1   0    0    -1  
@@ -655,10 +582,10 @@ $EndComp
 Text Label 3400 3500 0    50   ~ 0
 reset
 $Comp
-L Device:C C?
+L Device:C C5
 U 1 1 5EE01D39
 P 3050 4000
-F 0 "C?" V 3302 4000 50  0000 C CNN
+F 0 "C5" V 3302 4000 50  0000 C CNN
 F 1 "0.1uF" V 3211 4000 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 3088 3850 50  0001 C CNN
 F 3 "~" H 3050 4000 50  0001 C CNN
@@ -679,10 +606,10 @@ $EndComp
 Wire Wire Line
 	9100 4000 9200 4000
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0103
 U 1 1 5EE45410
 P 9650 5200
-F 0 "#PWR?" H 9650 4950 50  0001 C CNN
+F 0 "#PWR0103" H 9650 4950 50  0001 C CNN
 F 1 "GND" H 9655 5027 50  0000 C CNN
 F 2 "" H 9650 5200 50  0001 C CNN
 F 3 "" H 9650 5200 50  0001 C CNN
@@ -706,10 +633,10 @@ Connection ~ 9650 4600
 Wire Wire Line
 	9650 4600 9650 4700
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0104
 U 1 1 5EE4B5A3
 P 10200 5200
-F 0 "#PWR?" H 10200 4950 50  0001 C CNN
+F 0 "#PWR0104" H 10200 4950 50  0001 C CNN
 F 1 "GND" H 10205 5027 50  0000 C CNN
 F 2 "" H 10200 5200 50  0001 C CNN
 F 3 "" H 10200 5200 50  0001 C CNN
@@ -812,4 +739,77 @@ Wire Wire Line
 Connection ~ 3200 4250
 Wire Wire Line
 	3200 4250 3400 4250
+Text Label 7200 3150 3    50   ~ 0
+GND
+Text Notes 8300 2500 0    59   ~ 12
+USB Serial\n
+Text Notes 6750 2500 0    59   ~ 12
+MPU6050
+Wire Notes Line
+	8300 3450 8300 2500
+Wire Notes Line
+	9200 3450 8300 3450
+Wire Notes Line
+	9200 2500 9200 3450
+Wire Notes Line
+	8300 2500 9200 2500
+Wire Notes Line
+	6750 3450 6750 2500
+Wire Notes Line
+	8200 3450 6750 3450
+Wire Notes Line
+	8200 2500 8200 3450
+Wire Notes Line
+	6750 2500 8200 2500
+Text Label 7800 3150 3    50   ~ 0
+INT
+Text Label 8650 2750 2    50   ~ 0
+Vcc
+Text Label 7100 3150 3    50   ~ 0
+Vcc
+NoConn ~ 7700 3150
+NoConn ~ 7600 3150
+NoConn ~ 7500 3150
+NoConn ~ 8650 3150
+$Comp
+L power:GND #PWR010
+U 1 1 5EDA7056
+P 8650 3050
+F 0 "#PWR010" H 8650 2800 50  0001 C CNN
+F 1 "GND" V 8655 2922 50  0000 R CNN
+F 2 "" H 8650 3050 50  0001 C CNN
+F 3 "" H 8650 3050 50  0001 C CNN
+	1    8650 3050
+	0    1    1    0   
+$EndComp
+Text Label 8650 2950 2    50   ~ 0
+TX
+Text Label 8650 2850 2    50   ~ 0
+RX
+Text Label 7400 3150 3    50   ~ 0
+SDA
+Text Label 7300 3150 3    50   ~ 0
+SCL
+$Comp
+L JuanDaLIB:MPU6050 U3
+U 1 1 5ED6DBFD
+P 7450 2900
+F 0 "U3" H 7878 2888 50  0000 L CNN
+F 1 "MPU6050" H 7250 3100 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 7450 2900 50  0001 C CNN
+F 3 "" H 7450 2900 50  0001 C CNN
+	1    7450 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J4
+U 1 1 5ED6A301
+P 8850 2950
+F 0 "J4" H 8930 2992 50  0000 L CNN
+F 1 "Serial" H 8930 2901 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 8850 2950 50  0001 C CNN
+F 3 "~" H 8850 2950 50  0001 C CNN
+	1    8850 2950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
