@@ -808,6 +808,10 @@ Wire Wire Line
 	7750 1700 7750 1900
 Wire Wire Line
 	7750 1900 7650 1900
-Text Label 7350 1900 2    50   ~ 0
-POT
+Wire Wire Line
+	6900 1900 6900 1350
+Wire Wire Line
+	6900 1350 7500 1350
+Wire Wire Line
+	6900 1900 7350 1900
 $EndSCHEMATC

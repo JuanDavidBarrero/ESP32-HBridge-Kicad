@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\24-R016\Downloads\ESP32_BridgeH\ESP32_BridgeH.sch)
-    (date "14/06/2020 14:31:51")
+    (date "14/06/2020 14:32:23")
     (tool "Eeschema (5.1.0)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
