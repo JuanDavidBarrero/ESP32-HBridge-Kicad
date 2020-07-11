@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ESP32-footprints-Shem-Lib:ESP32-WROOM U2
+L ESP32_BridgeH-rescue:ESP32-WROOM-ESP32-footprints-Shem-Lib U2
 U 1 1 5ED3E5B9
 P 5450 3950
 F 0 "U2" H 5425 5337 60  0000 C CNN
@@ -92,7 +92,7 @@ Vcc
 Text Label 6350 4300 0    50   ~ 0
 INT
 $Comp
-L JuanDaLIB:TB6612FNG U1
+L ESP32_BridgeH-rescue:TB6612FNG-JuanDaLIB U1
 U 1 1 5EDBDFBD
 P 5200 1600
 F 0 "U1" H 5200 2065 50  0000 C CNN
@@ -458,12 +458,6 @@ F 3 "" H 9200 5200 50  0001 C CNN
 $EndComp
 Text Label 7050 1700 2    50   ~ 0
 Vcc
-Text Label 4500 4450 2    50   ~ 0
-ADC
-Text Label 7500 1350 2    50   ~ 0
-ADC
-Wire Notes Line
-	6750 2350 8200 2350
 Wire Notes Line
 	8200 2350 8200 1100
 Wire Notes Line
@@ -486,21 +480,11 @@ $EndComp
 Wire Wire Line
 	7250 1500 7250 1700
 Wire Wire Line
-	7250 1900 7350 1900
-Wire Wire Line
 	7750 1500 7750 1700
 Wire Wire Line
-	7750 1900 7650 1900
-Wire Wire Line
 	7250 1700 7050 1700
-Connection ~ 7250 1700
-Wire Wire Line
-	7250 1700 7250 1900
 Wire Wire Line
 	7750 1700 7900 1700
-Connection ~ 7750 1700
-Wire Wire Line
-	7750 1700 7750 1900
 $Comp
 L Device:R_POT RV1
 U 1 1 5EE37AC4
@@ -522,7 +506,7 @@ U 1 1 5EE06799
 P 9650 4300
 F 0 "R4" H 9720 4346 50  0000 L CNN
 F 1 "1 Kohm" H 9720 4255 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9580 4300 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 9580 4300 50  0001 C CNN
 F 3 "~" H 9650 4300 50  0001 C CNN
 	1    9650 4300
 	1    0    0    -1  
@@ -533,7 +517,7 @@ U 1 1 5EE06B2E
 P 9650 4850
 F 0 "R5" H 9720 4896 50  0000 L CNN
 F 1 "330 ohm" H 9720 4805 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9580 4850 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 9580 4850 50  0001 C CNN
 F 3 "~" H 9650 4850 50  0001 C CNN
 	1    9650 4850
 	1    0    0    -1  
@@ -559,7 +543,7 @@ U 1 1 5EE11F58
 P 7200 4000
 F 0 "R3" H 7270 4046 50  0000 L CNN
 F 1 "1 Kohm" H 7270 3955 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7130 4000 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 7130 4000 50  0001 C CNN
 F 3 "~" H 7200 4000 50  0001 C CNN
 	1    7200 4000
 	1    0    0    -1  
@@ -568,17 +552,6 @@ Text Label 7200 3850 0    50   ~ 0
 Vcc
 Wire Notes Line
 	2350 5450 2350 2500
-$Comp
-L Switch:SW_DPST SW1
-U 1 1 5EDE5818
-P 2850 3500
-F 0 "SW1" H 2850 3825 50  0000 C CNN
-F 1 "reset" H 2850 3734 50  0000 C CNN
-F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 2850 3500 50  0001 C CNN
-F 3 "~" H 2850 3500 50  0001 C CNN
-	1    2850 3500
-	-1   0    0    -1  
-$EndComp
 Text Label 3400 3500 0    50   ~ 0
 reset
 $Comp
@@ -695,21 +668,9 @@ Wire Notes Line
 Text Notes 6750 3700 0    59   ~ 12
 Boot
 Wire Wire Line
-	3050 3400 3050 3500
-Wire Wire Line
 	3400 3250 3400 3500
 Wire Wire Line
-	2650 3400 2650 3500
-Wire Wire Line
-	2650 3500 2500 3500
-Wire Wire Line
 	2500 3500 2500 4350
-Connection ~ 2650 3500
-Wire Wire Line
-	2650 3500 2650 3600
-Connection ~ 3050 3500
-Wire Wire Line
-	3050 3500 3050 3600
 Wire Wire Line
 	2900 4350 3200 4350
 Wire Wire Line
@@ -720,12 +681,9 @@ Wire Wire Line
 	3400 3750 3400 3850
 Wire Wire Line
 	3250 3750 3250 3500
-Wire Wire Line
-	3050 3500 3250 3500
 Connection ~ 3250 3750
 Wire Wire Line
 	3250 3750 3400 3750
-Connection ~ 3250 3500
 Wire Wire Line
 	3250 3500 3400 3500
 Wire Wire Line
@@ -743,8 +701,6 @@ Text Label 7200 3150 3    50   ~ 0
 GND
 Text Notes 8300 2500 0    59   ~ 12
 USB Serial\n
-Text Notes 6750 2500 0    59   ~ 12
-MPU6050
 Wire Notes Line
 	8300 3450 8300 2500
 Wire Notes Line
@@ -759,8 +715,6 @@ Wire Notes Line
 	8200 3450 6750 3450
 Wire Notes Line
 	8200 2500 8200 3450
-Wire Notes Line
-	6750 2500 8200 2500
 Text Label 7800 3150 3    50   ~ 0
 INT
 Text Label 8650 2750 2    50   ~ 0
@@ -791,7 +745,7 @@ SDA
 Text Label 7300 3150 3    50   ~ 0
 SCL
 $Comp
-L JuanDaLIB:MPU6050 U3
+L ESP32_BridgeH-rescue:MPU6050-JuanDaLIB U3
 U 1 1 5ED6DBFD
 P 7450 2900
 F 0 "U3" H 7878 2888 50  0000 L CNN
@@ -812,4 +766,66 @@ F 3 "~" H 8850 2950 50  0001 C CNN
 	1    8850 2950
 	1    0    0    -1  
 $EndComp
+Wire Notes Line
+	6750 2500 8200 2500
+Text Notes 6750 2500 0    59   ~ 12
+MPU6050
+Wire Notes Line
+	6750 2350 8200 2350
+Text Label 7500 1350 0    50   ~ 0
+POT
+Text Label 4500 4450 2    50   ~ 0
+POT
+Connection ~ 7750 1700
+Wire Wire Line
+	7750 1700 7750 1900
+Wire Wire Line
+	7750 1900 7650 1900
+Text Label 7350 1900 2    50   ~ 0
+POT
+$Comp
+L Switch:SW_DPST SW1
+U 1 1 5EDE5818
+P 2900 3400
+F 0 "SW1" H 2900 3725 50  0000 C CNN
+F 1 "reset" H 2900 3634 50  0000 C CNN
+F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 2900 3400 50  0001 C CNN
+F 3 "~" H 2900 3400 50  0001 C CNN
+	1    2900 3400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 3500 2700 3650
+Wire Wire Line
+	2700 3650 3100 3650
+Wire Wire Line
+	3100 3650 3100 3500
+Wire Wire Line
+	2700 3300 2700 3200
+Wire Wire Line
+	2700 3150 3100 3150
+Wire Wire Line
+	3100 3150 3100 3250
+Wire Wire Line
+	3250 3500 3100 3500
+Connection ~ 3250 3500
+Connection ~ 3100 3500
+Wire Wire Line
+	2700 3500 2500 3500
+Connection ~ 2700 3500
+Wire Wire Line
+	2700 3200 2500 3200
+Wire Wire Line
+	2500 3200 2500 3500
+Connection ~ 2700 3200
+Wire Wire Line
+	2700 3200 2700 3150
+Connection ~ 2500 3500
+Wire Wire Line
+	3100 3250 3250 3250
+Wire Wire Line
+	3250 3250 3250 3500
+Connection ~ 3100 3250
+Wire Wire Line
+	3100 3250 3100 3300
 $EndSCHEMATC

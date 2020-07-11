@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:ESP32_BridgeH-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -553,17 +552,6 @@ Text Label 7200 3850 0    50   ~ 0
 Vcc
 Wire Notes Line
 	2350 5450 2350 2500
-$Comp
-L Switch:SW_DPST SW1
-U 1 1 5EDE5818
-P 2850 3500
-F 0 "SW1" H 2850 3825 50  0000 C CNN
-F 1 "reset" H 2850 3734 50  0000 C CNN
-F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 2850 3500 50  0001 C CNN
-F 3 "~" H 2850 3500 50  0001 C CNN
-	1    2850 3500
-	-1   0    0    -1  
-$EndComp
 Text Label 3400 3500 0    50   ~ 0
 reset
 $Comp
@@ -680,21 +668,7 @@ Wire Notes Line
 Text Notes 6750 3700 0    59   ~ 12
 Boot
 Wire Wire Line
-	3050 3400 3050 3500
-Wire Wire Line
 	3400 3250 3400 3500
-Wire Wire Line
-	2650 3400 2650 3500
-Wire Wire Line
-	2650 3500 2500 3500
-Wire Wire Line
-	2500 3500 2500 4350
-Connection ~ 2650 3500
-Wire Wire Line
-	2650 3500 2650 3600
-Connection ~ 3050 3500
-Wire Wire Line
-	3050 3500 3050 3600
 Wire Wire Line
 	2900 4350 3200 4350
 Wire Wire Line
@@ -704,13 +678,10 @@ Wire Wire Line
 Wire Wire Line
 	3400 3750 3400 3850
 Wire Wire Line
-	3250 3750 3250 3500
-Wire Wire Line
-	3050 3500 3250 3500
+	3250 3750 3250 3550
 Connection ~ 3250 3750
 Wire Wire Line
 	3250 3750 3400 3750
-Connection ~ 3250 3500
 Wire Wire Line
 	3250 3500 3400 3500
 Wire Wire Line
@@ -810,4 +781,24 @@ Wire Wire Line
 	7750 1900 7650 1900
 Text Label 7350 1900 2    50   ~ 0
 POT
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5F0B3F20
+P 2800 3550
+F 0 "SW1" H 2800 3835 50  0000 C CNN
+F 1 "Reset" H 2800 3744 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 2800 3750 50  0001 C CNN
+F 3 "~" H 2800 3750 50  0001 C CNN
+	1    2800 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3550 3250 3550
+Connection ~ 3250 3550
+Wire Wire Line
+	3250 3550 3250 3500
+Wire Wire Line
+	2600 3550 2500 3550
+Wire Wire Line
+	2500 3550 2500 4350
 $EndSCHEMATC
